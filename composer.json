@@ -1,19 +1,23 @@
 {
-  "name": "drupal/communications",
-  "type": "drupal-module",
-  "description": "A Drupal 8 modules that provides functionality and configuration for an email support system, utilizing inbound email routing.",
-  "keywords": ["Drupal"],
-  "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/communications",
-  "authors": [
-    {
-      "name": "krystalcode",
-      "homepage": "https://www.drupal.org/u/krystalcode",
-      "role": "Maintainer"
+    "name": "drupal/communications",
+    "type": "drupal-module",
+    "description": "A Drupal 8 modules that provides functionality and configuration for an email support system, utilizing inbound email routing.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/communications",
+    "authors": [
+        {
+            "name": "krystalcode",
+            "homepage": "https://www.drupal.org/u/krystalcode",
+          "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/communications",
+      "source": "http://cgit.drupalcode.org/communications"
+    },
+    "require": {
+        "drupal/field_group": "^1.0",
+        "drupal/jsonb": "^1.0@beta"
     }
-  ],
-  "support": {
-    "issues": "https://www.drupal.org/project/issues/communications",
-    "source": "http://cgit.drupalcode.org/communications"
-  }
 }
