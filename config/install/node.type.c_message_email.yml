@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Email Message'
+type: c_message_email
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

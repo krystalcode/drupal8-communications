@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.c_email
+    - node.type.c_message_email
+id: node.c_message_email.c_email
+field_name: c_email
+entity_type: node
+bundle: c_message_email
+label: From
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

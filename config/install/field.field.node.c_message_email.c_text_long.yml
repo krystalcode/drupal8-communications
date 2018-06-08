@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.c_text_long
+    - node.type.c_message_email
+  module:
+    - text
+id: node.c_message_email.c_text_long
+field_name: c_text_long
+entity_type: node
+bundle: c_message_email
+label: 'Body in HTML'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

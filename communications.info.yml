@@ -1,0 +1,13 @@
+name: Communications
+type: module
+description: Provides functionality and configuration for an email support system, utilizing inbound email routing.
+package: Communications
+core: 8.x
+dependencies:
+  - jsonb
+  - field_group
+  - file
+  - image
+  - node
+  - user
+  - text

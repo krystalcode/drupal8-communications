@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Message labels'
+vid: c_labels
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.c_json
+    - node.type.c_message_email
+  module:
+    - jsonb
+id: node.c_message_email.c_json
+field_name: c_json
+entity_type: node
+bundle: c_message_email
+label: JSON
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json

@@ -1,0 +1,291 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.c_message_email.c_email
+    - field.field.node.c_message_email.c_email_id
+    - field.field.node.c_message_email.c_email_subject
+    - field.field.node.c_message_email.c_emails
+    - field.field.node.c_message_email.c_emails2
+    - field.field.node.c_message_email.c_emails3
+    - field.field.node.c_message_email.c_files
+    - field.field.node.c_message_email.c_images
+    - field.field.node.c_message_email.c_json
+    - field.field.node.c_message_email.c_node
+    - field.field.node.c_message_email.c_string_long
+    - field.field.node.c_message_email.c_taxonomy_terms
+    - field.field.node.c_message_email.c_text_long
+    - field.field.node.c_message_email.c_text_long2
+    - field.field.node.c_message_email.c_timestamp
+    - field.field.node.c_message_email.c_user
+    - field.field.node.c_message_email.c_users
+    - field.field.node.c_message_email.c_users2
+    - field.field.node.c_message_email.c_users3
+    - node.type.c_message_email
+  module:
+    - field_group
+    - file
+    - image
+    - jsonb
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_tab_1
+        - group_tab_2
+        - group_tab_3
+        - group_tab_4
+        - group_tab_5
+        - group_tab_6
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Content
+    group_tab_1:
+      children:
+        - c_string_long
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+      label: Text
+    group_tab_2:
+      children:
+        - c_text_long
+      parent_name: group_tabs
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: HTML
+    group_tab_3:
+      children:
+        - c_files
+        - c_images
+      parent_name: group_tabs
+      weight: 4
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Attachments
+    group_tab_4:
+      children:
+        - c_user
+        - c_users
+        - c_users2
+        - c_users3
+      parent_name: group_tabs
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Users
+    group_tab_5:
+      children:
+        - c_taxonomy_terms
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Metadata
+    group_details:
+      children:
+        - c_node
+        - c_email
+        - c_emails
+        - c_emails2
+        - c_emails3
+        - c_timestamp
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: false
+      label: Header
+    group_tab_6:
+      children:
+        - c_email_id
+        - c_json
+        - c_text_long2
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Data
+id: node.c_message_email.default
+targetEntityType: node
+bundle: c_message_email
+mode: default
+content:
+  c_email:
+    weight: 12
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  c_email_id:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  c_emails:
+    weight: 13
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  c_emails2:
+    weight: 14
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  c_emails3:
+    weight: 15
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  c_files:
+    weight: 8
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  c_images:
+    weight: 9
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  c_json:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: jsonb_default
+    region: content
+  c_node:
+    weight: 11
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  c_string_long:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  c_taxonomy_terms:
+    weight: 17
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  c_text_long:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  c_text_long2:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  c_timestamp:
+    weight: 16
+    label: inline
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
+    region: content
+  c_user:
+    weight: 10
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  c_users:
+    weight: 11
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  c_users2:
+    weight: 12
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  c_users3:
+    weight: 13
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  c_email_subject: true
+  links: true

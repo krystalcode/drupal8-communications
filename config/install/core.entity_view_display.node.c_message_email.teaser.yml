@@ -1,0 +1,53 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.c_message_email.c_email
+    - field.field.node.c_message_email.c_email_id
+    - field.field.node.c_message_email.c_email_subject
+    - field.field.node.c_message_email.c_emails
+    - field.field.node.c_message_email.c_emails2
+    - field.field.node.c_message_email.c_emails3
+    - field.field.node.c_message_email.c_files
+    - field.field.node.c_message_email.c_images
+    - field.field.node.c_message_email.c_json
+    - field.field.node.c_message_email.c_node
+    - field.field.node.c_message_email.c_string_long
+    - field.field.node.c_message_email.c_text_long
+    - field.field.node.c_message_email.c_text_long2
+    - field.field.node.c_message_email.c_timestamp
+    - field.field.node.c_message_email.c_user
+    - field.field.node.c_message_email.c_users
+    - field.field.node.c_message_email.c_users2
+    - field.field.node.c_message_email.c_users3
+    - node.type.c_message_email
+  module:
+    - user
+id: node.c_message_email.teaser
+targetEntityType: node
+bundle: c_message_email
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  c_email: true
+  c_email_id: true
+  c_email_subject: true
+  c_emails: true
+  c_emails2: true
+  c_emails3: true
+  c_files: true
+  c_images: true
+  c_json: true
+  c_node: true
+  c_string_long: true
+  c_text_long: true
+  c_text_long2: true
+  c_timestamp: true
+  c_user: true
+  c_users: true
+  c_users2: true
+  c_users3: true
