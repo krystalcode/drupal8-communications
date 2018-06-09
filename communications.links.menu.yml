@@ -1,0 +1,17 @@
+communications.admin:
+  title: 'Communications'
+  route_name: 'communications.admin'
+  parent: 'system.admin'
+  description: 'Administer and configure your communications.'
+
+communications.configuration:
+  title: 'Configuration'
+  route_name: 'communications.configuration'
+  parent: 'communications.admin'
+  description: 'Configure your communications settings.'
+
+communications.settings_form:
+  title: 'Settings'
+  description: 'Manage communications settings.'
+  parent: communications.configuration
+  route_name: communications.settings_form

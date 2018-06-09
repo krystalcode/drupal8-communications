@@ -1,0 +1,23 @@
+communications.admin:
+  path: '/admin/communications'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Communications'
+  requirements:
+    _permission: 'administer communications'
+
+communications.configuration:
+  path: '/admin/communications/config'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Configuration'
+  requirements:
+    _permission: 'access commerce administration pages'
+
+communications.settings_form:
+  path: '/admin/communications/config/settings'
+  defaults:
+    _form: '\Drupal\communications\Form\SettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'administer communications'

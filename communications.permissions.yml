@@ -1,0 +1,3 @@
+administer communications:
+  title: 'Administer communications configuration'
+  restrict access: true
