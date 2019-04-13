@@ -1,0 +1,45 @@
+drupal.message:
+  version: VERSION
+  css:
+    layout:
+      css/message.module.css: {}
+  js:
+    js/message.js: {}
+  dependencies:
+    - core/drupal.entity-form
+    - core/drupalSettings
+
+drupal.message.preview:
+  version: VERSION
+  css:
+    theme:
+      css/message.preview.css: {}
+  js:
+    js/message.preview.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupal.dialog
+    - core/drupal.form
+
+drupal.message_types:
+  version: VERSION
+  js:
+    js/message_types.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.form
+
+form:
+  version: VERSION
+  css:
+    layout:
+      css/message.module.css: {}
+
+drupal.message.admin:
+  version: VERSION
+  css:
+    theme:
+      css/message.admin.css: {}

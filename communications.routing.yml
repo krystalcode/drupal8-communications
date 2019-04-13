@@ -21,3 +21,15 @@ communications.settings_form:
     _title: 'Settings'
   requirements:
     _permission: 'administer communications'
+
+entity.message.preview:
+  path: '/messages/preview/{message_preview}/{view_mode_id}'
+  defaults:
+    _controller: '\Drupal\communications\Controller\MessagePreviewController::view'
+    _title_callback: '\Drupal\communications\Controller\MessagePreviewController::title'
+  requirements:
+    _message_preview_access: '{message_preview}'
+  options:
+    parameters:
+      message_preview:
+        type: 'message_preview'

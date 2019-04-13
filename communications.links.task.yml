@@ -1,0 +1,9 @@
+entity.message_type.collection:
+  route_name: entity.message_type.collection
+  base_route: entity.message_type.collection
+  title: Message types
+
+entity.message.collection:
+  route_name: entity.message.collection
+  base_route: entity.message.collection
+  title: Messages

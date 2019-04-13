@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Styles for the Message preview page.
+ */
+
+.message-preview-container {
+  position: fixed;
+  z-index: 499;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 36em) {
+  .message-preview-container .form-type-select {
+    margin-left: 25%; /* LTR */
+  }
+  [dir="rtl"] .message-preview-container .form-type-select {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+}

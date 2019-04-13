@@ -1,0 +1,25 @@
+communications.message.type.*:
+  type: config_entity
+  label: 'Message type'
+  mapping:
+    name:
+      type: label
+      label: 'Name'
+    type:
+      type: string
+      label: 'Machine-readable name'
+    description:
+      type: text
+      label: 'Description'
+    help:
+      type: text
+      label: 'Explanation or submission guidelines'
+    new_revision:
+      type: boolean
+      label: 'Whether a new revision should be created by default'
+    preview_mode:
+      type: integer
+      label: 'Preview before submitting'
+    display_submitted:
+      type: boolean
+      label: 'Display setting for author and date Submitted by post information'

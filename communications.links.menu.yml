@@ -15,3 +15,15 @@ communications.settings_form:
   description: 'Manage communications settings.'
   parent: communications.configuration
   route_name: communications.settings_form
+
+entity.message_type.collection:
+  title: 'Message types'
+  route_name: 'entity.message_type.collection'
+  parent: 'communications.configuration'
+  description: 'Manage fields, form and display settings for your messages.'
+
+entity.message.collection:
+  title: 'Messages'
+  route_name: 'entity.message.collection'
+  parent: 'communications.admin'
+  description: 'Manage your messages.'
